@@ -21,7 +21,7 @@ export interface Concept {id:string;name:string;elements:string[]}
 export interface Atlas {version:string;sex?:'male';source?:string;scope?:string;parts:Part[];concepts:Concept[];chunks:{url:string;bytes:number;gzip?:string;gzipBytes?:number}[];triangles:number}
 export type View = 'three-quarter'|'front'|'back'|'side';
 export interface SceneState {inspectorOpen?:boolean;explode:number;visible:SystemId[];selected:string[];isolate:boolean;view:View;rotate:boolean;reset:number}
-export const DEFAULT_VISIBLE:SystemId[] = ['cardiac','sensory','skeletal','muscular','arterial','venous','nervous','respiratory','digestive','urinary','lymphatic','endocrine','reproductive','connective'];
+export const DEFAULT_VISIBLE:SystemId[] = ['cardiac','sensory','skeletal','muscular','arterial','venous','nervous','respiratory','digestive','urinary','lymphatic','endocrine','connective'];
 export const EXPLANATIONS:Record<string,string> = {
  'heart':'Ko\'krak qafasidagi mushakli nasos. Uning o\'ng qismi qonni o\'pkaga, chap qismi esa katta qon aylanish doirasiga haydaydi.',
  'liver':'Diafragmaning o\'ng tomoni ostida joylashgan yirik a\'zo. U so\'rilgan oziq moddalarni qayta ishlaydi, o\'t suyuqligi ishlab chiqaradi va qonda tashiladigan ko\'plab oqsillarni sintez qiladi.',
